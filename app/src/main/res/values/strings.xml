@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Training</string>
+    <string name="simple_page_name">Simple Activity</string>
+    <string name="multi_page_activity_name">Multi Page Activity</string>
+    <string name="page1_name">Page1</string>
+    <string name="page2_name">Page2</string>
+    <string name="product_details_title">"Brown men's shoe leather: Mike"</string>
+    <string name="product_details_price">"Price: 99,95 €"</string>
+    <string name="product_detals_size">"Size: 45"</string>
+    <string name="product_details_number">"Number: 1"</string>
+    <string name="product_details_order">Order</string>
+</resources>
