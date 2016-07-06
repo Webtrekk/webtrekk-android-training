@@ -21,4 +21,13 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.webtrekk.webtrekksdk:WebtrekkSDK:4.2.0'
+    //compile (name: "WebtrekkSDK-release", ext:'aar');
+}
+
+
+repositories {
+    flatDir {
+        dirs "libs"
+    }
 }

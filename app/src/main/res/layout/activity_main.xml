@@ -10,6 +10,7 @@
     android:orientation="vertical"
     tools:context="com.webtrekk.webtrekksdk.training.MainActivity">
 
+    //------------------------------------------- Page Tracking ------------------------------------------------------//
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,4 +22,33 @@
         android:onClick="onMultiPageName"
         android:text="@string/multi_page_activity_name"/>
 
+    //------------------------------------------- CDB Tracking ------------------------------------------------------//
+<!--
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCDBTackng"
+        android:text="@string/cdb_tracking"/>
+-->
+    //------------------------------------------- Action Tracking ------------------------------------------------------//
+<!--
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onActionTracking"
+        android:text="@string/action_tracking"/>
+-->
+    //------------------------------------------- Recommendations ------------------------------------------------------//
+<!--
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRecoTrackng"
+            android:text="@string/reco_tracking"/>
+    -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onExceptionTrackng"
+        android:text="@string/exception_tracking"/>
 </LinearLayout>

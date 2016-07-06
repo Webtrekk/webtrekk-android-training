@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webtrekkConfiguration>
+  <version>2</version>
+  <trackId>123451234512345</trackId>
+  <trackDomain>http://q3.webtrekk.net</trackDomain>
+  <sampling>0</sampling>
+  <sendDelay>0</sendDelay>
+  <maxRequests>5000</maxRequests>
+  <resendOnStartEventTime>30</resendOnStartEventTime>
+  <autoTracked>true</autoTracked>
+  <autoTrackAppUpdate>true</autoTrackAppUpdate>
+  <autoTrackAdvertiserId>true</autoTrackAdvertiserId>
+  <autoTrackAppVersionName>true</autoTrackAppVersionName>
+  <autoTrackAppVersionCode>true</autoTrackAppVersionCode>
+  <autoTrackRequestUrlStoreSize>true</autoTrackRequestUrlStoreSize>
+  <autoTrackAppPreInstalled>true</autoTrackAppPreInstalled>
+  <autoTrackApiLevel>true</autoTrackApiLevel>
+  <autoTrackScreenOrientation>true</autoTrackScreenOrientation>
+  <autoTrackConnectionType>true</autoTrackConnectionType>
+  <autoTrackAdvertisementOptOut>true</autoTrackAdvertisementOptOut>
+  <autoTrackPlaystoreUsername>false</autoTrackPlaystoreUsername>
+  <autoTrackPlaystoreMail>false</autoTrackPlaystoreMail>
+  <enableRemoteConfiguration>false</enableRemoteConfiguration>
+  <trackingConfigurationUrl>https://d1r27qvpjiaqj3.cloudfront.net/1111111111111111/36646.xml</trackingConfigurationUrl>
+  <globalTrackingParameter>
+    <pageParameter>
+      <parameter id="1" key="AT1"/>
+      <parameter id="2">ATS1</parameter>
+    </pageParameter>
+  </globalTrackingParameter>
+  <screen>
+    <classname type="text">com.webtrekk.webtrekksdk.training.MainActivity</classname>
+    <mappingname type="text">MainName</mappingname>
+    <autoTracked>false</autoTracked>
+  </screen>
+  <screen>
+    <classname type="text">com.webtrekk.webtrekksdk.training.ComplexActivity</classname>
+    <mappingname type="text">ComplexName</mappingname>
+    <autoTracked>false</autoTracked>
+  </screen>
+  <screen>
+    <classname type="text">com.webtrekk.webtrekksdk.training.SimpleActivity</classname>
+    <mappingname type="text">SimpleName</mappingname>
+    <autoTracked>true</autoTracked>
+    <activityTrackingParameter>
+      <pageParameter>
+        <parameter id="5" key="AT1"/>
+        <parameter id="1" key="AT2"/>
+      </pageParameter>
+    </activityTrackingParameter>
+  </screen>
+</webtrekkConfiguration>
