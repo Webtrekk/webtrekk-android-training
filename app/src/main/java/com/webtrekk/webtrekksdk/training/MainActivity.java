@@ -139,4 +139,11 @@ public class MainActivity extends Activity {
         //s.length();
     }
 */
+
+    public void onMediaTracking(View view)
+    {
+        Intent intent = new Intent(this, MediaExampleActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -13,5 +13,6 @@
     <string name="action_tracking">Action Tracking</string>
     <string name="reco_tracking">Reco Tracking</string>
     <string name="exception_tracking">Exception Tracking</string>
+    <string name="media_tracking">Media Tracking</string>
 
 </resources>

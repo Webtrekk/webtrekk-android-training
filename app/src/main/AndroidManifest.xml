@@ -28,6 +28,7 @@
             </intent-filter>
             </activity>
         <activity android:name=".ComplexActivity"/>
+        <activity android:name=".MediaExampleActivity"/>
     </application>
 
 </manifest>
