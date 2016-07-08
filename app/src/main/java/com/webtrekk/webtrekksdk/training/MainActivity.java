@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
     }
 
     //------------------------------------------- Page Tracking ------------------------------------------------------//
+/*
     public void onSimplePageName(View view)
     {
         Intent intent = new Intent(this, SimpleActivity.class);
@@ -40,6 +41,7 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, ComplexActivity.class);
         startActivity(intent);
     }
+*/
 
     //------------------------------------------- CDB Tracking ------------------------------------------------------//
     //CDB request will be sent each day to refresh CDB database
@@ -84,7 +86,7 @@ public class MainActivity extends Activity {
 
     //------------------------------------------- Recommendations ------------------------------------------------------//
 /*
-    public void onRecoTrackng(View view)
+    public void onRecoTracking(View view)
     {
         Webtrekk webtrekk = Webtrekk.getInstance();
         WebtrekkRecommendations recommendations = webtrekk.getRecommendations();
@@ -101,9 +103,7 @@ public class MainActivity extends Activity {
 
                 }
             }
-        }, "complexReco").setProductId("085cc2g007")*/
-/*.setProductCat(productCat)*//*
-.call();
+        }, "complexReco").setProductId("085cc2g007").call();
     }
 
     // help function for reco
@@ -117,8 +117,8 @@ public class MainActivity extends Activity {
 
         return ret;
     }
-*/
 
+*/
     //------------------------------------------- Exceptions ------------------------------------------------------//
 
 /*
@@ -140,10 +140,13 @@ public class MainActivity extends Activity {
     }
 */
 
+    //------------------------------------------- Media tracking ------------------------------------------------------//
+/*
     public void onMediaTracking(View view)
     {
         Intent intent = new Intent(this, MediaExampleActivity.class);
         startActivity(intent);
     }
+*/
 
 }

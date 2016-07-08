@@ -36,12 +36,6 @@
   </globalTrackingParameter>
 
 
-<!--
-  <recommendations>
-    <recommendation name="complexReco">http://reco.webtrekk.com/dmp/recos/v1/?accountId=238713152098253&amp;placementId=39876</recommendation>
-  </recommendations>
--->
-
   <screen>
     <classname type="text">com.webtrekk.webtrekksdk.training.MainActivity</classname>
     <mappingname type="text">MainName</mappingname>

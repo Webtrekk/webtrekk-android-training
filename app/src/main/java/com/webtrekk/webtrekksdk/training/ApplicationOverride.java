@@ -13,7 +13,7 @@ public class ApplicationOverride extends Application {
         super.onCreate();
 
         //Initialization can be done Application.onCreate() or in any place before or with main activity creation.
-       Webtrekk.getInstance().initWebtrekk(this);
+       //Webtrekk.getInstance().initWebtrekk(this);
        //------------------------------------------- Manual server request and alternative configuration xml ------------------------------------------------------//
        //Webtrekk.getInstance().initWebtrekk(this, R.raw.webtrekk_config_alternative);
 

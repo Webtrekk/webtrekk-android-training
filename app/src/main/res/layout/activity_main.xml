@@ -11,7 +11,7 @@
     tools:context="com.webtrekk.webtrekksdk.training.MainActivity">
 
     //------------------------------------------- Page Tracking ------------------------------------------------------//
-    <Button
+ <!--   <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onSimplePageName"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:onClick="onMultiPageName"
         android:text="@string/multi_page_activity_name"/>
-
+-->
     //------------------------------------------- CDB Tracking ------------------------------------------------------//
 <!--
     <Button
@@ -43,9 +43,9 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRecoTrackng"
+            android:onClick="onRecoTracking"
             android:text="@string/reco_tracking"/>
-    -->
+-->
     //------------------------------------------- Exception ------------------------------------------------------//
 <!--
     <Button
@@ -54,9 +54,13 @@
         android:onClick="onExceptionTrackng"
         android:text="@string/exception_tracking"/>
 -->
+    //------------------------------------------- Media tracking ------------------------------------------------------//
+
+<!--
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onMediaTracking"
         android:text="@string/media_tracking"/>
+-->
 </LinearLayout>
