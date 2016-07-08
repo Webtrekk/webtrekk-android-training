@@ -46,11 +46,14 @@
             android:onClick="onRecoTrackng"
             android:text="@string/reco_tracking"/>
     -->
+    //------------------------------------------- Exception ------------------------------------------------------//
+<!--
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onExceptionTrackng"
         android:text="@string/exception_tracking"/>
+-->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

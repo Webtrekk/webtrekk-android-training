@@ -15,6 +15,7 @@ public class ComplexActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.complex_activity);
+        Webtrekk.getInstance().setCustomPageName("CustomPage1");
     }
 
     public void onPage1Click(View view)
