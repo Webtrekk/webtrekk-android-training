@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 18
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.webtrekk.webtrekksdk.training"
         minSdkVersion 14
-        targetSdkVersion 18
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -21,7 +21,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.webtrekk.webtrekksdk:WebtrekkSDK:4.2.0'
+    compile 'com.webtrekk.webtrekksdk:WebtrekkSDK:4.6.0'
     //compile (name: "WebtrekkSDK-release", ext:'aar');
 }
 
