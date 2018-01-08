@@ -9,58 +9,81 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="com.webtrekk.webtrekksdk.training.MainActivity">
+       <!--                           Page Tracking                                                                      -->
+       <Button
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:onClick="onSimplePageName"
+           android:text="@string/simple_page_name"/>
+       <Button
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:onClick="onMultiPageName"
+           android:text="@string/multi_page_activity_name"/>
+    <!--                                              CDB Tracking                                                        -->
+       <Button
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:onClick="onCDBTackng"
+           android:text="@string/cdb_tracking"/>
+    <!--                                              Action Tracking                                                        -->
+       <Button
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:onClick="onActionTracking"
+           android:text="@string/action_tracking"/>
 
-    //------------------------------------------- Page Tracking ------------------------------------------------------//
- <!--   <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onSimplePageName"
-        android:text="@string/simple_page_name"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onMultiPageName"
-        android:text="@string/multi_page_activity_name"/>
--->
-    //------------------------------------------- CDB Tracking ------------------------------------------------------//
-<!--
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onCDBTackng"
-        android:text="@string/cdb_tracking"/>
--->
-    //------------------------------------------- Action Tracking ------------------------------------------------------//
-<!--
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onActionTracking"
-        android:text="@string/action_tracking"/>
--->
-    //------------------------------------------- Recommendations ------------------------------------------------------//
-<!--
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onRecoTracking"
-            android:text="@string/reco_tracking"/>
--->
-    //------------------------------------------- Exception ------------------------------------------------------//
-<!--
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onExceptionTrackng"
-        android:text="@string/exception_tracking"/>
--->
-    //------------------------------------------- Media tracking ------------------------------------------------------//
+    <!--                                              Recommendations                                                        -->
+           <Button
+               android:visibility="gone"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:onClick="onRecoTracking"
+               android:text="@string/reco_tracking"/>
+    <!--                                              Exception                                                        -->
+       <Button
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:onClick="onExceptionTrackng"
+           android:text="@string/exception_tracking"/>
+    <!--                                              Media tracking                                                        -->
 
-<!--
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onMediaTracking"
-        android:text="@string/media_tracking"/>
--->
+       <Button
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:onClick="onMediaTracking"
+           android:text="@string/media_tracking"/>
+
+    <!--                                              Show Product List                                                       -->
+       <Button
+           android:visibility="gone"
+           android:id="@+id/show_productList"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Show Product List"
+           android:layout_gravity="center_horizontal"
+           android:onClick="productList" />
+
+    <!--                                              Web View tracking                                                        -->
+
+       <Button
+           android:visibility="gone"
+           android:id="@+id/show_webview"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Show Web View"
+           android:layout_gravity="center_horizontal"
+           android:onClick="appToWebConnection" />
+
+       <WebView
+           android:id="@+id/main_web_view"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone"/>
 </LinearLayout>

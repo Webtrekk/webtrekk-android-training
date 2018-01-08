@@ -2,10 +2,13 @@ package com.webtrekk.webtrekksdk.training;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Looper;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.webtrekk.webtrekksdk.TrackingParameter;
 import com.webtrekk.webtrekksdk.TrackingParameter.Parameter;
@@ -13,6 +16,7 @@ import com.webtrekk.webtrekksdk.Webtrekk;
 import com.webtrekk.webtrekksdk.WebtrekkRecommendations;
 import com.webtrekk.webtrekksdk.WebtrekkRecommendations.*;
 import com.webtrekk.webtrekksdk.WebtrekkUserParameters;
+import com.webtrekk.webtrekksdk.training.ProductList.ProductListActivity;
 
 import java.util.List;
 import java.util.Map;
@@ -24,12 +28,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            WebView.setWebContentsDebuggingEnabled(true);
+        }
+
         //initWebtrekk can be called in first activity onCreate.
-        //Webtrekk.getInstance().initWebtrekk(getApplication());
+        Webtrekk.getInstance().initWebtrekk(getApplication());
+        Webtrekk.getInstance().getCustomParameter().put("PageCatKey", "PageCategory1");
     }
 
     //------------------------------------------- Page Tracking ------------------------------------------------------//
-/*
     public void onSimplePageName(View view)
     {
         Intent intent = new Intent(this, SimpleActivity.class);
@@ -41,11 +49,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, ComplexActivity.class);
         startActivity(intent);
     }
-*/
 
     //------------------------------------------- CDB Tracking ------------------------------------------------------//
     //CDB request will be sent each day to refresh CDB database
-/*
     public void onCDBTackng(View view)
     {
         Webtrekk webtrekk = Webtrekk.getInstance();
@@ -62,14 +68,12 @@ public class MainActivity extends Activity {
                 setFacebookID("FACEBOOKID").
                 setTwitterID("TwitterID").
                 setGooglePlusID("GooglePlId").
-                setLiknedInID("GoogleID").
+                setLinkedInID("GoogleID").
                 setCustom(1, "customCDB1").
                 setCustom(2, "customCDB2"));
     }
-*/
 
     //------------------------------------------- Action Tracking ------------------------------------------------------//
-/*
     public void onActionTracking(View view)
     {
         Webtrekk webtrekk = Webtrekk.getInstance();
@@ -82,10 +86,8 @@ public class MainActivity extends Activity {
 
         webtrekk.track(parameter);
     }
-*/
 
     //------------------------------------------- Recommendations ------------------------------------------------------//
-/*
     public void onRecoTracking(View view)
     {
         Webtrekk webtrekk = Webtrekk.getInstance();
@@ -118,10 +120,8 @@ public class MainActivity extends Activity {
         return ret;
     }
 
-*/
     //------------------------------------------- Exceptions ------------------------------------------------------//
 
-/*
     public void onExceptionTrackng(View view)
     {
         Webtrekk webtrekk = Webtrekk.getInstance();
@@ -138,15 +138,42 @@ public class MainActivity extends Activity {
         //full crash
         //s.length();
     }
-*/
 
     //------------------------------------------- Media tracking ------------------------------------------------------//
-/*
     public void onMediaTracking(View view)
     {
         Intent intent = new Intent(this, MediaExampleActivity.class);
         startActivity(intent);
     }
-*/
+
+
+    //------------------------------------------- Web View tracking ------------------------------------------------------//
+    public void appToWebConnection(View view){
+
+        final WebView webView = (WebView)findViewById(R.id.main_web_view);
+        webView.setVisibility(View.VISIBLE);
+
+        webView.getSettings().setJavaScriptEnabled(true);
+
+        Webtrekk.getInstance().setupWebView(webView);
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onLoadResource(WebView view, String url) {
+                if (url.startsWith("http://q3.webtrekk.net/")) {
+                    Log.d("webViewLoadURL:", url);
+                }
+                super.onLoadResource(view, url);
+            }
+        });
+
+        webView.loadUrl("http://jenkins-yat-dev-01.webtrekk.com/web/hello.html");
+    }
+
+    //------------------------------------------- Product List Tracking------------------------------------------------------//
+    public void productList(View view)
+    {
+        Intent intent = new Intent(this, ProductListActivity.class);
+        startActivity(intent);
+    }
 
 }

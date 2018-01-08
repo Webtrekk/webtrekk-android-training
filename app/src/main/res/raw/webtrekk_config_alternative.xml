@@ -22,6 +22,13 @@
   <autoTrackPlaystoreMail>false</autoTrackPlaystoreMail>
   <enableRemoteConfiguration>false</enableRemoteConfiguration>
   <trackingConfigurationUrl>https://d1r27qvpjiaqj3.cloudfront.net/1111111111111111/36646.xml</trackingConfigurationUrl>
+
+  <!--enable or disable exception logging. By default is disabled -->
+  <errorLogEnable>true</errorLogEnable>
+  <!--set log level to do loging 1- only fatals 2 - fatal and catched, 3- all logs. By default = 3 -->
+  <errorLogLevel>3</errorLogLevel>
+
+
   <globalTrackingParameter>
     <pageParameter>
       <parameter id="1" key="AT1"/>
@@ -29,11 +36,9 @@
     </pageParameter>
   </globalTrackingParameter>
 
-<!--
   <recommendations>
     <recommendation name="complexReco">http://reco.webtrekk.com/dmp/recos/v1/?accountId=238713152098253&amp;placementId=39876</recommendation>
   </recommendations>
--->
 
     <screen>
     <classname type="text">com.webtrekk.webtrekksdk.training.MainActivity</classname>

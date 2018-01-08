@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:name=".ApplicationOverride"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.Light">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +29,8 @@
             </activity>
         <activity android:name=".ComplexActivity"/>
         <activity android:name=".MediaExampleActivity"/>
+        <activity android:name=".ProductList.ProductListActivity"/>
+        <activity android:name=".ProductList.ProductDetailActivity"/>
     </application>
 
 </manifest>

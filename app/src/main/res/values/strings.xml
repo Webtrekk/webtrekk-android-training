@@ -14,5 +14,9 @@
     <string name="reco_tracking">Reco Tracking</string>
     <string name="exception_tracking">Exception Tracking</string>
     <string name="media_tracking">Media Tracking</string>
+    <string name="product_view">View</string>
+    <string name="product_add">Add</string>
+    <string name="product_conf">Conf</string>
+    <string name="product_clear_basket">Clear Basket</string>
 
 </resources>
