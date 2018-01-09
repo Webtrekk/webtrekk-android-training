@@ -27,7 +27,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.webtrekk.webtrekksdk:WebtrekkSDK:4.7.2'
+    compile 'com.webtrekk.webtrekksdk:WebtrekkSDK:4.7.3'
     //compile (name: "webtrekk_sdk-debug", ext:'aar');
     implementation 'com.android.support:appcompat-v7:27.0.1'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
